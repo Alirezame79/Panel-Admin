@@ -1,0 +1,14 @@
+{
+  "login": {
+    "title": "پروژه ی پنل ادمین",
+    "emailLabel": "ایمیل",
+    "emailEmptyError": "ایمیل نمیتواند خالی باشد",
+    "emailLengthError": "حداقل باید ۴ کاراکتر باشد",
+    "passwordLabel": "رمزعبور",
+    "passwordEmptyError": "رمزعبور نمیتواند خالی باشد",
+    "passwordLengthError": "حداقل باید ۴ کاراکتر باشد",
+    "submitBtn": "ورود",
+    "loadingBtn": "درحال بارگذاری",
+    "alertWrongUser": ".حساب کاربری با اطلاعات وارد شده وجود ندارد. لطفا اطلاعات را بررسی کنید"
+  }
+}

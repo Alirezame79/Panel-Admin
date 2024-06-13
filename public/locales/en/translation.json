@@ -1,0 +1,14 @@
+{
+  "login": {
+    "title": "Panel Admin Project",
+    "emailLabel": "Email",
+    "emailEmptyError": "Email can't be empty!",
+    "emailLengthError": "Minimum length is 4.",
+    "passwordLabel": "Password",
+    "passwordEmptyError": "Password can't be empty!",
+    "passwordLengthError": "Minimum length is 4.",
+    "submitBtn": "Submit",
+    "loadingBtn": "Loading",
+    "alertWrongUser": "Account not found! Please check the data again."
+  }
+}
