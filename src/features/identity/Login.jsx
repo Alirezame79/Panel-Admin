@@ -1,7 +1,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { httpService } from "../../core/http-services";
+import { httpService } from "@core/http-services";
 import { useTranslation } from "react-i18next";
 
 const Login = () => {
@@ -39,6 +39,7 @@ const Login = () => {
               response.data.map((user) => {
                 if ((user.email === values.email) && (user.password === values.password)) {
                   setSituation(200)
+                  localStorage.setItem('token', 'abcdefghijklmnopqrstuvwxyz')
                   navigate('/')
                 } else {
                   setSituation(404)
@@ -53,18 +54,18 @@ const Login = () => {
             })
         }}
       >
-        <Form className="bg-slate-300 w-1/2 m-auto p-3 pb-2 rounded-lg shadow-md flex flex-col">
+        <Form className="login_form w-1/2 m-auto p-3 pb-2 rounded-lg shadow-md flex flex-col">
           <div className="flex flex-col gap-1 m-3">
-            <label htmlFor="Email">{t('login.emailLabel')}</label>
+            <label className="form_label" htmlFor="Email">{t('login.emailLabel')}</label>
             <Field className="text-lg p-1 rounded" type="email" name="email" />
-            <ErrorMessage className="text-red-700" name="email" component="p" />
+            <ErrorMessage className="form_alert mt-1" name="email" component="p" />
           </div>
           <div className="flex flex-col gap-1 m-3">
-            <label htmlFor="Password">{t('login.passwordLabel')}</label>
+            <label className="form_label" htmlFor="Password">{t('login.passwordLabel')}</label>
             <Field className="text-lg p-1 rounded" type="text" name="password" />
-            <ErrorMessage className="text-red-700" name="password" component="p" />
+            <ErrorMessage className="form_alert mt-1" name="password" component="p" />
           </div>
-          <button disabled={loading} className='bg-slate-500 hover:bg-slate-400 w-1/3 mx-auto mt-8 mb-2 py-2 rounded font-bold text-lg' type="submit" >
+          <button disabled={loading} className='submit_btn w-1/3 mx-auto mt-8 mb-2 py-2 rounded font-bold text-lg' type="submit" >
             {loading ? t('login.loadingBtn') : t('login.submitBtn')}
           </button>
           {situation === 404 &&
