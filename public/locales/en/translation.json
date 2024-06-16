@@ -10,5 +10,14 @@
     "submitBtn": "Submit",
     "loadingBtn": "Loading",
     "alertWrongUser": "Account not found! Please check the data again."
+  },
+  "mainLayout": {
+    "title": "Panel Admin Project",
+    "allCourses": "All Courses",
+    "admins": "Admins",
+    "manageAccess": "Manage Access",
+    "statisticAnalyze": "Statistic Analyze",
+    "changePassword": "Change Password",
+    "footer": "All rights belong to the developer"
   }
 }

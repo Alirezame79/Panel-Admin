@@ -5,7 +5,8 @@ import { useTranslation } from "react-i18next";
 const AppContext = createContext();
 const initialState = {
   language: localStorage.getItem('language') || 'en',
-  theme: localStorage.getItem('theme') || 'light'
+  theme: localStorage.getItem('theme') || 'light',
+  showSidebar: true
 };
 
 function AppProvider({ children }) {
@@ -29,8 +30,13 @@ function AppProvider({ children }) {
     localStorage.setItem('theme', state.theme)
   }, [state.theme])
 
+  // Sidebar Handler
+  function changeSidebarVisibility() {
+    dispatch({ type: 'TOGGLE_SIDEBAR' })
+  }
+
   return (
-    <AppContext.Provider value={{ ...state, changeLanguage, changeTheme }}>
+    <AppContext.Provider value={{ ...state, changeLanguage, changeTheme, changeSidebarVisibility }}>
       {children}
     </AppContext.Provider>);
 }

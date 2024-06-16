@@ -6,7 +6,8 @@ import path from 'path';
 export default defineConfig({
   resolve:{
     alias:{
-      '@core': path.resolve(__dirname, './src/core')
+      '@core': path.resolve(__dirname, './src/core'),
+      '@context': path.resolve(__dirname, './src/context')
     }
   },
   plugins: [react()],

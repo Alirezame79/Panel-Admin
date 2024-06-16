@@ -42,3 +42,40 @@
     background-color: #94a3b8;
   }
 }
+
+.main_layout {
+  background-color: #fbfcfd;
+
+  .main_layout_sidebar {
+    background-color: #f1f5f9;
+    box-shadow: 0px 0.5px 5px #ccc;
+  }
+
+  .main_layout_navbar {
+    background-color: #f1f5f9;
+    box-shadow: 0px 0.5px 5px #ccc;
+  }
+
+  .main_layout_footer {
+    background-color: #f1f5f9;
+    box-shadow: 0px -0.5px 5px #ccc;
+    color: #333;
+  }
+
+  .main_layout_sidebar {
+
+    .main_layout_sidebar_title {
+      color: #1e293b;
+    }
+
+    .main_layout_sidebar_options {
+      li {
+        color: #333;
+      }
+
+      li:hover {
+        color: #000;
+      }
+    }
+  }
+}

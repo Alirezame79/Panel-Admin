@@ -15,7 +15,7 @@ const IdentityLayout = () => {
         <ChangeLanguage />
       </nav>
       <div className="w-2/3 m-auto pt-32">
-        <h1 className="special_font title text-5xl text-center mb-20" style={{ fontFamily: language === 'en' ? "Lilita One" : "Lalezar" }}>{t('login.title')}</h1>
+        <h1 className="title text-5xl text-center mb-20" style={{ fontFamily: language === 'en' ? "Lilita One" : "Lalezar" }}>{t('login.title')}</h1>
         <Outlet />
       </div >
     </div >
