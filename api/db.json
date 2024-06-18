@@ -11,16 +11,38 @@
       "password": "root"
     }
   ],
-  "names": [
+  "courses": [
     {
-      "id": "123",
-      "email": "aaaa",
-      "password": "aaaa"
+      "id": "001",
+      "title": "React Developement",
+      "cover": "https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/fGWjtyQtG4JE7UXgaPAN",
+      "description": "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies. React can be used to develop single-page, mobile, or server-rendered applications with frameworks like Next.js.",
+      "duration": "240",
+      "rating": "8.7"
     },
     {
-      "email": "alirezaghmathenglish@gmail.com",
-      "password": "alireza79",
-      "id": "gh-ZXIr"
+      "id": "002",
+      "title": "Laravel Developement",
+      "cover": "https://www.trainingnepal.com/wp-content/uploads/2023/05/Laravel-Framework.jpg",
+      "description": "Laravel is a free and open-source PHP-based web framework for building high-end web applications. It was created by Taylor Otwell and intended for the development of web applications following the model–view–controller architectural pattern and based on Symfony.",
+      "duration": "420",
+      "rating": "7.5"
+    },
+    {
+      "id": "003",
+      "title": "Django Developement",
+      "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUneiotx9L-O7vs_mTOWqldSwYkqerZm_NQ2uKyYea47MO9_WpkmYKKd5RVV52_2pEEQ4qviAkmysCurdEzMbIu13sY1F-s9L0V2JddNQeFELWSwau-BT5S-F9HNpN3ViNGUFJrI4QHi4/w1200-h630-p-k-no-nu/Django+3+-+Full+Stack+Websites+with+Python+Web+Development+-+best+Udemy+course.png",
+      "description": "Django is a free and open-source, Python-based web framework that runs on a web server. It follows the model–template–views architectural pattern. It is maintained by the Django Software Foundation, an independent organization established in the US as a 501 non-profit.",
+      "duration": "180",
+      "rating": "8.2"
+    },
+    {
+      "id": "004",
+      "title": "ASP.net Developement",
+      "cover": "https://www.ictacademy.in/pages/assets/base/img/content/stock/asp.jpg",
+      "description": "ASP.NET is a server-side web-application framework designed for web development to produce dynamic web pages. It was developed by Microsoft to allow programmers to build dynamic web sites, applications and services. The name stands for Active Server Pages Network Enabled Technologies.",
+      "duration": "300",
+      "rating": "8.0"
     }
   ]
 }

@@ -4,7 +4,7 @@ export default function Footer() {
   const { t } = useTranslation()
 
   return (
-    <footer className="main_layout_footer footer absolute bottom-0 w-full p-3">
+    <footer className="main_layout_footer footer w-full p-3">
       {t('mainLayout.footer')}
     </footer>
   )
