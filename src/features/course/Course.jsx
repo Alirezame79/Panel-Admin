@@ -1,12 +1,16 @@
 /* eslint-disable react/prop-types */
 
-export default function Course({ title, cover, description, duration, rating }) {
+import { Link } from "react-router-dom";
+
+export default function Course({ id, title, cover, description, duration, rating }) {
 
   return (
     <div className="card m-2 p-2">
       <img className="card-img-top" src={cover} style={{ height: '250px' }} alt={`${title} cover`} />
       <div className="card-header p-2">
-        <h3 className="text-2xl font-bold m-2">{title}</h3>
+        <h3 className="text-2xl font-bold m-2">
+          <Link to={`/course/${id}/`}>{title}</Link>
+        </h3>
       </div>
       <div className="card-body">
         <p className="text-truncate-2">{description}</p>
